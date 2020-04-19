@@ -1,0 +1,3 @@
+/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_scan/build/CMakeFiles/rebuild_cache.dir
+/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_scan/build/CMakeFiles/test_scan.dir
+/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_scan/build/CMakeFiles/edit_cache.dir
