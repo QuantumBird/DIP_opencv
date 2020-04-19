@@ -1,3 +1,0 @@
-/home/quantumbird/github/DIP_opencv/secion1-basic/prog1/build/CMakeFiles/rebuild_cache.dir
-/home/quantumbird/github/DIP_opencv/secion1-basic/prog1/build/CMakeFiles/test_resize.dir
-/home/quantumbird/github/DIP_opencv/secion1-basic/prog1/build/CMakeFiles/edit_cache.dir
