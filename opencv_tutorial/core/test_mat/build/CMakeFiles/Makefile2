@@ -64,16 +64,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/quantumbird/github/DIP_opencv/section1-basic/prog1
+CMAKE_SOURCE_DIR = /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build
+CMAKE_BINARY_DIR = /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/test_resize.dir/all
+all: CMakeFiles/test_mat.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/test_resize.dir/clean
+clean: CMakeFiles/test_mat.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_resize.dir
+# Target rules for target CMakeFiles/test_mat.dir
 
 # All Build rule for target.
-CMakeFiles/test_resize.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles --progress-num=1,2 "Built target test_resize"
-.PHONY : CMakeFiles/test_resize.dir/all
+CMakeFiles/test_mat.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles --progress-num=1,2 "Built target test_mat"
+.PHONY : CMakeFiles/test_mat.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_resize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_resize.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_resize.dir/rule
+CMakeFiles/test_mat.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_mat.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_mat.dir/rule
 
 # Convenience name for target.
-test_resize: CMakeFiles/test_resize.dir/rule
+test_mat: CMakeFiles/test_mat.dir/rule
 
-.PHONY : test_resize
+.PHONY : test_mat
 
 # clean rule for target.
-CMakeFiles/test_resize.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/clean
-.PHONY : CMakeFiles/test_resize.dir/clean
+CMakeFiles/test_mat.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/clean
+.PHONY : CMakeFiles/test_mat.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

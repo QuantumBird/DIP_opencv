@@ -1,13 +1,22 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 using namespace cv;
-int main() {
-  Mat img = imread("../sample.jpg");
+int main(int argv, const char * argc[]) {
+  Mat img;
+  if (argv > 1) {
+    img = imread(argc[1]);
+  } else {
+    img = imread("../lena.jpg");
+  }
+  if (img.empty()) {
+    std::cout << "Unable open image" << std::endl;
+    return 1;
+  }
   Mat grayimg;
   cvtColor(img, grayimg, COLOR_BGR2GRAY);
 
   auto size = grayimg.size();
-  std::cout << "size of image" << size << std::endl;
+  std::cout << "size of image: " << size << std::endl;
   int scale = 2;
   Size rsize(size.width * scale, size.height * scale);
 

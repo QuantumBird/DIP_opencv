@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/quantumbird/github/DIP_opencv/section1-basic/prog1/main.cpp
+/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/main.cpp
 opencv2/opencv.hpp
 -
 iostream

@@ -1,4 +1,4 @@
-# Install script for directory: /home/quantumbird/github/DIP_opencv/section1-basic/prog1
+# Install script for directory: /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

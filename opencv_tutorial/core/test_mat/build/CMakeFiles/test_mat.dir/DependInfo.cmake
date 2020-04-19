@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/quantumbird/github/DIP_opencv/section1-basic/prog1/main.cpp" "/home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles/test_resize.dir/main.cpp.o"
+  "/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/main.cpp" "/home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles/test_mat.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

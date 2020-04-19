@@ -68,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/quantumbird/github/DIP_opencv/section1-basic/prog1
+CMAKE_SOURCE_DIR = /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build
+CMAKE_BINARY_DIR = /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/section1-basic/prog1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quantumbird/github/DIP_opencv/opencv_tutorial/core/test_mat/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_resize
+# Target rules for targets named test_mat
 
 # Build rule for target.
-test_resize: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_resize
-.PHONY : test_resize
+test_mat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mat
+.PHONY : test_mat
 
 # fast build rule for target.
-test_resize/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/build
-.PHONY : test_resize/fast
+test_mat/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/build
+.PHONY : test_mat/fast
 
 main.o: main.cpp.o
 
@@ -149,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -158,7 +158,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -167,7 +167,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resize.dir/build.make CMakeFiles/test_resize.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mat.dir/build.make CMakeFiles/test_mat.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,7 +178,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_resize"
+	@echo "... test_mat"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
