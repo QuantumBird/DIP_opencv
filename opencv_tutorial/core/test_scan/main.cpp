@@ -56,6 +56,39 @@ void iterator_scan(Mat & m) {
       }
   }
 }
+
+void at_scan(Mat & m) {
+  const int channels = m.channels();
+  switch(channels) {
+    case 1: {
+        for (int i = 0; i < m.rows; i ++) {
+          for (int j = 0; j < m.cols; j ++) {
+            m.at<uchar>(i, j) = table[m.at<uchar>(i, j)];
+          }
+        }
+        break;
+      }
+    case 3: {
+      Mat_<Vec3b> _m = m;
+      for (int i = 0; i < m.rows; i ++) {
+        for (int j = 0; j < m.cols;j ++) {
+          for (int k = 0; k < 3; k ++)
+            _m(i, j)[k] = table[_m(i, j)[k]];
+        }
+      }
+      break;
+    }
+  }
+}
+
+void lookup_scan(Mat & m) {
+  Mat lookup(1, 256, CV_8U);
+  uchar * p = lookup.data;
+  for (int i = 0; i < SIZE; i ++) 
+    p[i] = table[i];
+  LUT(m, lookup, m);
+}
+
 int main(int argc, const char * argv[]) {
   string filename = "../lena.jpg";
   if (argc > 1) {
@@ -74,6 +107,15 @@ int main(int argc, const char * argv[]) {
   Mat iimg = gimg.clone();
   CNT_TIME(iterator_scan(iimg));
   imshow("iterator scanned", iimg);
+
+  Mat aimg = gimg.clone();
+  CNT_TIME(at_scan(aimg));
+  imshow("at scanned", aimg);
+  
+  Mat limg = gimg.clone();
+  CNT_TIME(lookup_scan(limg));
+  imshow("LUT scanned", limg);
+
   waitKey(0);
   return 0;
 }
